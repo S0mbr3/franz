@@ -19,6 +19,7 @@
     "sign": "gulp sign",
     "prebuild": "gulp build",
     "build": "node_modules/.bin/electron-builder --publish onTag",
+    "postinstall": "electron-builder install-app-deps",
     "rebuild": "node_modules/.bin/electron-rebuild",
     "commit": "git-cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
